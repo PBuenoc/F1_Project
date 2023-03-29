@@ -30,7 +30,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
       o	Ingested data must be stored in columnar format (Parquet)
       o	Must be able to analyze the ingested data via SQL
       o	Ingestion logic must be able to handle incremental load
-      •	Data Transformation Requirements
+ #### •	Data Transformation Requirements
       o	Join the key information required for reporting to create a new table
       o	Joint the key information required for Analysis to create a new table
       o	Transformed tables must have audit columns
@@ -59,7 +59,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 ####  1. Create the Azure Databricks Service
     a.	Create the service in the premium tier and the workspace
 ####  2. Create the Databricks Cluster
-    a.	Configs:
+##### • a.	Configs:
       i.	All-purpose compute
       ii.	Policy – unrestricted
       iii.	Single node cluster
@@ -68,39 +68,39 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
       vi.	Node Type – Standard_DS3_V2 14 GB and 4 cores
       vii.	Terminate after 15 mins of inactivity
 ####  3.	Create Azure Data Lake Storage Gen2
-    a.	Set the same resource group of the rest project 
-    b.	Configs:
+#####    a.	Set the same resource group of the rest project 
+#####    b.	Configs:
       i.	Performance – Standard
       ii.	Replication – LRS
       iii.	Account Kind – Storage V2 (general purpose v2)
       iv.	Enable hierarchical namespace
-    c.	Create Containers – All private
+#####    c.	Create Containers – All private
       i.	Raw 
       ii.	Processed
       iii.	Presentation 
 ####  4.	Create a Service Principal
-    a.	In AAD register a new app in the ‘App Registrations’
-    b.	Service app name = databricks-service-app
-    c.	Create a new client secret 
-    d.	Store the value
+#####    a.	In AAD register a new app in the ‘App Registrations’
+#####    b.	Service app name = databricks-service-app
+#####    c.	Create a new client secret 
+#####    d.	Store the value
 ####  5.	Create Azure Key-vault and add secrets
-    a.	Configs:
+#####    a.	Configs:
       i.	All default
-    b.	Generate secrets, it’s just put the respective secret:
+#####    b.	Generate secrets, it’s just put the respective secret:
       i.	Databricks-app-client-id
       ii.	Databricks-app-tenant-id
       iii.	Databricks-app-secret
 ####  6.	Provide required access to the service principal
 ####  7.	Generate Secret Scope
-    a.	Enter in the UI on the principal panel of databricks using:
+#####    a.	Enter in the UI on the principal panel of databricks using:
       i.	In the final of the URL - #secrets/createScope
-    b.	Pass the DNS name of the key-vault
+#####    b.	Pass the DNS name of the key-vault
       i.	In the properties of the key-vault service
-    c.	And pass the Resource ID 
-   8.	Mount Azure Data Lake using Service Principal
-    a.	Get client_id, tenant_id and client¬_secret 
+#####    c.	And pass the Resource ID 
+####   8.	Mount Azure Data Lake using Service Principal
+#####    a.	Get client_id, tenant_id and client¬_secret 
       i.	Use the dbutils.secrets.get(scope=’’, key=’’)
-    b.	Set the spark config and mount
+#####    b.	Set the spark config and mount
       i.	Create a function that makes:
         1.	Get the parameters:
           a.	Storage_account_name
