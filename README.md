@@ -14,13 +14,13 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>  •	Create reports<p>
 
 ## The Data:
-  •	Circuits – CSV
-  •	Races – CSV
-  •	Constructors – Single Line Nested JSON
-  •	Drivers – Single Line JSON
-  •	Pitstops – Multi Line JSON
-  •	Lap Times – Split CSV Files
-  •	Qualifying – Split Multi Line JSON files
+<p>  •	Circuits – CSV<p>
+<p>  •	Races – CSV<p>
+<p>  •	Constructors – Single Line Nested JSON<p>
+<p>  •	Drivers – Single Line JSON<p>
+<p>  •	Pitstops – Multi Line JSON<p>
+<p>  •	Lap Times – Split CSV Files<p>
+<p>  •	Qualifying – Split Multi Line JSON files<p>
  
 ## Project Requirement:
 #### • Data Ingestion Requirements
