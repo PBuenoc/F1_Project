@@ -1,17 +1,17 @@
 ##Project Overview:
 Utilize the Ergast Developer API, which provides a historical record of motor racing data for non-commercial purposes. Using this API of the Formula 1, the project will perform all the steps of a real project, from the ingestion to creation of dashboards. In the end of the project, I will perform:
 
-  •	 Create, configure and use Databricks Clusters and Notebooks
-  •	Create, configure, access and use Azure Data Lake Storage Gen2
-  •	Use Azure Key-Vault to store secrets
-  •	Use Azure Active Directory to create a Service Principal
-  •	Realizing data ingestion with different files (CSV, JSON, Multiple Files)
-  •	Work with Databricks Workflows
-  •	Applying Filter and Join transformations and Aggregations
-  •	Use PySpark and Spark SQL
-  •	Create Databases, Tables and Views
-  •	Utilize Delta Lake
-  •	Create reports
+<p>  •	 Create, configure and use Databricks Clusters and Notebooks<p>
+<p>  •	Create, configure, access and use Azure Data Lake Storage Gen2 <p>
+<p>  •	Use Azure Key-Vault to store secrets <p>
+<p>  •	Use Azure Active Directory to create a Service Principal<p>
+<p>  •	Realizing data ingestion with different files (CSV, JSON, Multiple Files)<p>
+<p>  •	Work with Databricks Workflows<p>
+<p>  •	Applying Filter and Join transformations and Aggregations<p>
+<p>  •	Use PySpark and Spark SQL<p>
+<p>  •	Create Databases, Tables and Views<p>
+<p>  •	Utilize Delta Lake<p>
+<p>  •	Create reports<p>
 
 ##The Data:
   •	Circuits – CSV
