@@ -1,4 +1,4 @@
-##Project Overview:
+## Project Overview:
 Utilize the Ergast Developer API, which provides a historical record of motor racing data for non-commercial purposes. Using this API of the Formula 1, the project will perform all the steps of a real project, from the ingestion to creation of dashboards. In the end of the project, I will perform:
 
 <p>  •	 Create, configure and use Databricks Clusters and Notebooks<p>
@@ -13,7 +13,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>  •	Utilize Delta Lake<p>
 <p>  •	Create reports<p>
 
-##The Data:
+## The Data:
   •	Circuits – CSV
   •	Races – CSV
   •	Constructors – Single Line Nested JSON
@@ -22,7 +22,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
   •	Lap Times – Split CSV Files
   •	Qualifying – Split Multi Line JSON files
  
-##Project Requirement:
+## Project Requirement:
 #### • Data Ingestion Requirements
       o	Ingest All 8 files into the data lake
       o	Ingested data must have the schema applied
@@ -55,7 +55,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
     o	Ability to see history and time travel
     o	Ability to roll back to a previous version
 
-##Prepare the environment:
+## Prepare the environment:
   1. Create the Azure Databricks Service
     a.	Create the service in the premium tier and the workspace
   2. Create the Databricks Cluster
@@ -112,7 +112,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
         5.	Mount the Storage Account Container
 
 
-##Data Ingestion
+## Data Ingestion
  I started by ingesting the CSV files
   1.	Create a new folder for the ingestion notebooks
   2.	Create a new notebook for the ingestion of the Circuits file
