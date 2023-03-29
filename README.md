@@ -1,5 +1,6 @@
 ##Project Overview:
 Utilize the Ergast Developer API, which provides a historical record of motor racing data for non-commercial purposes. Using this API of the Formula 1, the project will perform all the steps of a real project, from the ingestion to creation of dashboards. In the end of the project, I will perform:
+
   •	 Create, configure and use Databricks Clusters and Notebooks
   •	Create, configure, access and use Azure Data Lake Storage Gen2
   •	Use Azure Key-Vault to store secrets
