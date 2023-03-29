@@ -110,29 +110,3 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
           a.	Documentation link - https://learn.microsoft.com/en-us/azure/databricks/dbfs/mounts
         4.	Unmount the mount point if already exists
         5.	Mount the Storage Account Container
-
-
-## Data Ingestion
- <p>I started by ingesting the CSV files<p>
- <p> 1.	Create a new folder for the ingestion notebooks<p>
-  <p>2.	Create a new notebook for the ingestion of the Circuits file<p>
-    <p>a.	Name – 1.ingest_circuits_file<p>
-    <p>b.	Steps:<p>
-      <p>i.	Define the Schema<p>
-        <p>1.	Import the types that we going to use<p>
-        <p>3.	The types:<p>
-          <p>a.	StructType - StructType<p>
-          <p>b.	StructField - StructField<p>
-          <p>c.	IntegerType<p>
-          <p>d.	StringType<p>
-          <p>e.	DoubleType<p>
-        <p>4.	Define a variable to create the schema<p>
-      <p>ii.	Read the CSV file using the spark DataFrame reader<p>
-        <p>2.	Read with the Header option as true<p>
-        <p>3.	Use the schema and specify with the schema created <p>
-        <p>4.	Prints what we have inside of the data frame<p>
-      <p>iii.	Select only the require columns<p>
-      <p>iv.	Rename the columns as required<p>
-      <p>v.	Add a new audit column <p>
-        <p>2.	Use the current_timestamp ()<p>
-      <p>vi.	Write the new data to the file system, as a Parquet file<p>
