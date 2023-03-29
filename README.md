@@ -22,29 +22,29 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
   •	Qualifying – Split Multi Line JSON files
  
 ##Project Requirement:
-####  •	Data Ingestion Requirements
-    o	Ingest All 8 files into the data lake
-    o	Ingested data must have the schema applied
-    o	Ingested data must have audit columns
-    o	Ingested data must be stored in columnar format (Parquet)
-    o	Must be able to analyze the ingested data via SQL
-    o	Ingestion logic must be able to handle incremental load
-    •	Data Transformation Requirements
-    o	Join the key information required for reporting to create a new table
-    o	Joint the key information required for Analysis to create a new table
-    o	Transformed tables must have audit columns
-    o	Must be able to analyze the transformed data via SQL
-    o	Transformed data must be stored in columnar format (Parquet)
-    o	Transformations logic must be able to handle incremental load
-####  •	Reporting Requirements
+#### • Data Ingestion Requirements
+      o	Ingest All 8 files into the data lake
+      o	Ingested data must have the schema applied
+      o	Ingested data must have audit columns
+      o	Ingested data must be stored in columnar format (Parquet)
+      o	Must be able to analyze the ingested data via SQL
+      o	Ingestion logic must be able to handle incremental load
+      •	Data Transformation Requirements
+      o	Join the key information required for reporting to create a new table
+      o	Joint the key information required for Analysis to create a new table
+      o	Transformed tables must have audit columns
+      o	Must be able to analyze the transformed data via SQL
+      o	Transformed data must be stored in columnar format (Parquet)
+      o	Transformations logic must be able to handle incremental load
+#### • Reporting Requirements
     o	Driver Standings
     o	Constructor Standings
-####  •	Analysis Requirements
+#### • Analysis Requirements
     o	Dominant Drivers
     o	Dominant Teams
     o	Visualize the outputs
     o	Create Databricks Dashboards
-####  •	Scheduling Requirements
+#### • Scheduling Requirements
     o	Scheduled to run every Sunday 10PM
     o	Ability to monitor pipelines
     o	Ability to re-run failed pipelines
