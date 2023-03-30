@@ -23,7 +23,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 ![image](https://user-images.githubusercontent.com/99371991/228934200-a1ceca1e-338b-4f61-8d46-4f2a3a553277.png)
 
 ### Project Requirement:
-<h4>•	Data Ingestion Requirements<h4>
+<h3>•	Data Ingestion Requirements<h3>
 <p>o	Ingest All 8 files into the data lake<p>
 <p>o	Ingested data must have the schema applied<p>
 <p>o	Ingested data must have audit columns<p>
@@ -31,7 +31,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>o	Must be able to analyze the ingested data via SQL<p>
 <p>o	Ingestion logic must be able to handle incremental load<p>
 
-<h4>•	Data Transformation Requirements<h4>
+<h3>•	Data Transformation Requirements<h3>
 <p>o	Join the key information required for reporting to create a new table<p>
 <p>o	Joint the key information required for Analysis to create a new table<p>
 <p>o	Transformed tables must have audit columns<p>
@@ -39,23 +39,23 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>o	Transformed data must be stored in columnar format (Parquet)<p>
 <p>o	Transformations logic must be able to handle incremental load<p>
 
-<h4>•	Reporting Requirements<h4>
+<h3>•	Reporting Requirements<h3>
 <p>o	Driver Standings<p>
 <p>o	Constructor Standings<p>
 
-<h4>•	Analysis Requirements<h4>
+<h3>•	Analysis Requirements<h3>
 <p>o	Dominant Drivers<p>
 <p>o	Dominant Teams<p>
 <p>o	Visualize the outputs<p>
 <p>o	Create Databricks Dashboards<p>
 
-<h4>•	Scheduling Requirements<h4>
+<h3>•	Scheduling Requirements<h3>
 <p>o	Scheduled to run every Sunday 10PM<p>
 <p>o	Ability to monitor pipelines<p>
 <p>o	Ability to re-run failed pipelines<p>
 <p>o	Ability to set-up alerts on failures<p>
 
-<h4>•	Other Non-Functional Requirements<h4>
+<h3>•	Other Non-Functional Requirements<h3>
 <p>o	Ability to delete individual records<p>
 <p>o	Ability to see history and time travel<p>
 <po	Ability to roll back to a previous version><p>
