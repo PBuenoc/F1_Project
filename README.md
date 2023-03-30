@@ -12,7 +12,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>•	Utilize Delta Lake<p>
 <p>•	Create reports<p>
 
-### The Data
+## The Data
 <p>•	Circuits – CSV<p>
 <p>•	Races – CSVp>
 <p>•	Constructors – Single Line Nested JSON<p>
@@ -22,8 +22,8 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>•	Qualifying – Split Multi Line JSON files<p>
 ![image](https://user-images.githubusercontent.com/99371991/228934200-a1ceca1e-338b-4f61-8d46-4f2a3a553277.png)
 
-### Project Requirement:
-#### •	Data Ingestion Requirements
+## Project Requirement:
+### •	Data Ingestion Requirements
 <p>o	Ingest All 8 files into the data lake<p>
 <p>o	Ingested data must have the schema applied<p>
 <p>o	Ingested data must have audit columns<p>
@@ -31,7 +31,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>o	Must be able to analyze the ingested data via SQL<p>
 <p>o	Ingestion logic must be able to handle incremental load<p>
 
-#### •	Data Transformation Requirements
+### •	Data Transformation Requirements
 <p>o	Join the key information required for reporting to create a new table<p>
 <p>o	Joint the key information required for Analysis to create a new table<p>
 <p>o	Transformed tables must have audit columns<p>
@@ -39,17 +39,17 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>o	Transformed data must be stored in columnar format (Parquet)<p>
 <p>o	Transformations logic must be able to handle incremental load<p>
 
-#### •	Reporting Requirements
+### •	Reporting Requirements
 <p>o	Driver Standings<p>
 <p>o	Constructor Standings<p>
 
-#### •	Analysis Requirements
+### •	Analysis Requirements
 <p>o	Dominant Drivers<p>
 <p>o	Dominant Teams<p>
 <p>o	Visualize the outputs<p>
 <p>o	Create Databricks Dashboards<p>
 
-#### •	Scheduling Requirements
+### •	Scheduling Requirements
 <p>o	Scheduled to run every Sunday 10PM<p>
 <p>o	Ability to monitor pipelines<p>
 <p>o	Ability to re-run failed pipelines<p>
