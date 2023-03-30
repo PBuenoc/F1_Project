@@ -20,6 +20,7 @@ Utilize the Ergast Developer API, which provides a historical record of motor ra
 <p>•	Pitstops – Multi Line JSON<p>
 <p>•	Lap Times – Split CSV Files<p>
 <p>•	Qualifying – Split Multi Line JSON files<p>
+
 ![image](https://user-images.githubusercontent.com/99371991/228934200-a1ceca1e-338b-4f61-8d46-4f2a3a553277.png)
 
 ## Project Requirement:
