@@ -1,5 +1,5 @@
 # Databricks notebook source
-# MAGIC %run "/Users/simbastico123_gmail.com#ext#@simbastico123gmail.onmicrosoft.com/formula1/includes/configuration"
+# MAGIC %run "../includes/configuration"
 
 # COMMAND ----------
 
@@ -31,4 +31,5 @@ final_df.write.mode('overwrite').parquet(f'{presentation_folder_path}/driver_sta
 display(spark.read.parquet(f'{presentation_folder_path}/driver_standings').filter('race_year=2020'))
 
 # COMMAND ----------
+
 

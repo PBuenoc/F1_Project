@@ -1,5 +1,6 @@
 # Databricks notebook source
-
+# MAGIC %run "../includes/configuration"
+# MAGIC %run "../includes/common_functions"
 
 # COMMAND ----------
 
@@ -59,4 +60,5 @@ results_df = results_df.withColumn('ingestion_date', from_utc_timestamp(current_
 results_df.write.mode('overwrite').partitionBy('race_id').parquet('/mnt/f1projectdl001/processed/results')
 
 # COMMAND ----------
+
 

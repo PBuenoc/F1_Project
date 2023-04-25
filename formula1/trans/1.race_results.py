@@ -1,5 +1,5 @@
 # Databricks notebook source
-# MAGIC %run "/Users/simbastico123_gmail.com#ext#@simbastico123gmail.onmicrosoft.com/formula1/includes/configuration"
+# MAGIC %run "../includes/configuration"
 
 # COMMAND ----------
 
@@ -69,4 +69,5 @@ final_df.write.mode('overwrite').parquet(f'{presentation_folder_path}/race_resul
 display(final_df.where("race_year == 2020 and race_name == 'Abu Dhabi Grand Prix'").orderBy(final_df.points.desc()))
 
 # COMMAND ----------
+
 
